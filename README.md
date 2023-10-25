@@ -43,24 +43,30 @@ npx create-next-app nextjs-flask --example "https://github.com/vercel/examples/t
 
 ## Getting Started
 
-First, install the dependencies:
+First, install the dependencies and pnpm if:
 
 ```bash
-npm install
-# or
-yarn
-# or
+
 pnpm install
+```
+
+Please downgrade the verison of Werkzeug to be compatiable with the flask Server:
+
+```
+ pip install --force-reinstall -v "Werkzeug==2.3.7"
 ```
 
 Then, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+
 pnpm dev
+```
+
+When you want to run Flask server on the local:
+
+```
+http://127.0.0.1:5328/api/python
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
