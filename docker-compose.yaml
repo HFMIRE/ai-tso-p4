@@ -31,7 +31,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - "./client:/usr/src/app"
-      - "/usr/src/node_modules"
+      - "/usr/src/app/node_modules"
     ports:
       - 3008:3000
     environment:
